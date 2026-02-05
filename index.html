@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    </head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="http://localhost:3002/#home">Home</a></li>
+      <li><a href="http://localhost:3002/#about">About</a></li>
+      <li><a href="http://localhost:3002/#skills">Skills</a></li>
+      <li><a href="http://localhost:3002/#projects">Projects</a></li>
+      <li><a href="http://localhost:3002/#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <header id="home">
+  <img style="width: 150px;" src="https://icon-library.com/images/default-profile-icon/default-profile-icon-6.jpg" alt="">
+  <h1>R.B</h1>
+<h3>Hello I'am Rakesh Bam</h3>
+    <p>Web Developer | Designer | Programmer</p>
+</header>
+
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am web developer with Python expertuse and strong passion for data science.I enjoy transforming ideas and data into practical, impactful solutions.</p>
+  </section>
+
+  <section id="skills">
+    <h2 style="text-align:center;">My Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML,CSS</div>
+      <div class="skill-box">Javacript</div>
+      <div class="skill-box">React.JS</div>
+      <div class="skill-box">Responsive Design</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 style="text-align:center;">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Restaurant Website</h3>
+        <p>A responsive restaurant website built using HTML, CSS, and JavaScript.</p>
+        <button onclick="openProject('restaurant')">View Project</button>
+      </div>
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>A simple calculator app using JavaScript for calculations.</p>
+        <button onclick="openProject('calculator')">View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Display Area -->
+  <section id="project-view" style="display:none; padding:40px 10%;">
+    <h2 id="project-title"></h2>
+    <div id="project-content"></div>
+    <button onclick="closeProject()" style="margin-top:20px;">Close</button>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required="">
+      <input type="email" placeholder="Your Email" required="">
+      <textarea placeholder="Your Message" required=""></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Rakesh Bam | All Rights Reserved</p>
+    <p>Bamrakesh62@gmail.com</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
